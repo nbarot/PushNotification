@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+	<class name="com.mfly.vo.PassengerContactInformation" table="PASSENGER_DETAILS">
+		<id name="ffp" type="string" column="FFP_NUMBER" />	
+		<property name="pnr" type="string" column="PNR" />
+		<property name="passengerFirstName" type="string"  column="PASSENGER_FIRST_NAME" />
+		<property name="passengerLastName" type="string"  column="PASSENGER_LAST_NAME" />		
+		<property name="phone" type="string" column="PHONE_NUMBER"/>
+		<property name="email" type="string" column="EMAIL"/>
+		<property name="deviceID" type="string" column="DEVICE_ID"/>
+		
+		<!-- <one-to-one name="references" fetch="join" class="com.mfly.vo.Reference" /> -->
+		<set name="references" table="reference_table" fetch="select" lazy="false">
+			<key foreign-key="ffp" column="FFP_NUMBER"/>				
+			<one-to-many class="com.mfly.vo.Reference"/>
+		</set>
+	</class>
+</hibernate-mapping>

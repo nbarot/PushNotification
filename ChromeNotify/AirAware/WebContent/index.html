@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Developed By MphasiS">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="generator" content="Hari">
+    <meta name="keywords" content="patram air waybill">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Add to homescreen -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">   
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <meta name="theme-color" content="#3372DF">
+    
+    
+
+    <title>Mfly Subscription Page</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/ie8ltsupport.js"></script>
+
+    <!--[if lt IE 9]>
+        <script type='text/javascript' src="js/html5.js"></script>
+        <script type='text/javascript' src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Bootstrap CSS-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--[if IE 9]>
+        <link href="css/ie9styles.css" rel="stylesheet">
+    <![endif]-->
+    
+    
+
+
+</head>
+
+<body>
+   <div class="image-background"></div>
+    <div class="wrap">
+        <div class="patram-header navbar navbar-fixed-top navbar-default">
+            <header class="hidden-xs">
+                <div class="logo-image">
+                </div>
+            </header>
+            <div class="navbar-header navbar-custom">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pat-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand visible-xs" href="#">MFly</a>
+            </div>
+			<div class="collapse navbar-collapse navbar-custom" id="pat-navbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown mega">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <i class="glyphicon glyphicon-plane"></i><span> Plan a trip</span>
+                        </a>
+                        
+                    </li>
+                    
+                    <li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <i class="glyphicon glyphicon-tasks"></i><span> Manage Flight</span>
+                        </a>
+                    </li>
+                    <li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <i class="glyphicon glyphicon-question-sign"></i><span> Travel Information</span>
+                        </a>
+                    </li>
+					
+                </ul>
+				<ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <!--a href="#"></a-->
+                    </li>
+                    
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.navbar -->
+        <div class="hack-content container-fluid set-paddingTop">
+            <div class="row">
+                <div class="content-container">
+                    <div class="content-header col-xs-16 sr-only">
+                        <h3>Update Flight Delay Information</h3>
+                        
+                    </div>
+                    <div class="content-body col-xs-16">
+                        <div class="row row-eq-height">
+                            
+							<div class="col-xs-16">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading ">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-xs-16"><h3>Book Flight</h3></div>
+                                            <div class="col-xs-10 align-right padding-all hidden-xs ">
+                                                <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Check In</a>
+                                                <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-time"></span> Flight Status</a>
+                                                <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Subscribe for updates</a>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                   
+                                        <div class="panel-body ">
+											
+											<table>
+												<tr class="row">
+													<td class="col-md-5 col-sm-7 col-xs-16">
+														<div class="form-group">
+                                                            <label for="From">Frequent Flyer Number</label> 
+                                                            <input type="text" class="js-frequent-flyer-number form-control">
+                                                        </div>
+													</td>
+												</tr>
+												<tr class="row" >
+													<td class="col-md-5 col-sm-16">
+														<div class="js-push-switch-container">
+                                                            <label class="wsk-switch wsk-js-switch wsk-js-ripple-effect"
+                                                                for="enable-push"> <input type="checkbox" id="enable-push"
+                                                                class="wsk-switch__input js-enable-push" disabled /> <span
+                                                                class="wsk-switch__label">Enable Push Notifications</span>
+                                                            </label>
+                                                        </div>
+													</td>
+												</tr>
+												<tr class="row">
+												    <td class="col-sm-4 col-xs-16">
+														<div class="send-push-options js-send-push-options">
+                                                            <p class="center">
+                                                                <button 
+                                                                   class="btn-block xhr-button js-xhr-button wsk-button wsk-js-button wsk-button--colored wsk-js-ripple-effect btn btn-warning btn-lg">
+                                                                    Submit Registration</button>
+                                                            </p>
+                                                        </div>
+                                                        <div class="error-message-container js-error-message-container">
+                                                            <h1 class="error-title js-error-title"></h1>
+                                                            <p class="error-message js-error-message"></p>
+                                                        </div>
+												    </td>
+												</tr>
+											
+											</table>
+                                            
+                                        </div>
+                                   
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+						
+					<div class="row">
+							<div class="col-md-4 col-sm-8">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Flight + 6 Nights / $2100</h3>
+                                    </div>
+                                    <div class="panel-body no-header">
+                                        <div class="row">
+                                            <div class="col-xs-16 align-right">
+                                                <img src="images/sec-2.jpg" alt="LOGO" width="100%" height="145">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-md-4 col-sm-8">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Flight + 4 Nights / $2000</h3>
+                                    </div>
+                                    <div class="panel-body no-header">
+                                        <div class="row">
+                                            <div class="col-xs-16 align-right">
+                                                <img src="images/sec-1.jpg" alt="LOGO" width="100%" height="145">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-8">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Flight + 2 Nights / $500</h3>
+                                    </div>
+                                    <div class="panel-body no-header">
+                                        <div class="row">
+                                            <div class="col-xs-16 align-right">
+                                                <img src="images/sec-3.jpg" alt="LOGO" width="100%" height="145">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-8">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Flight + 3 Nights / $1000</h3>
+                                    </div>
+                                    <div class="panel-body no-header">
+                                        <div class="row">
+                                            <div class="col-xs-16 align-right">
+                                                <img src="images/sec-2.jpg" alt="LOGO" width="100%" height="145">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <footer class="patram-footer footer-fixed">
+        <p class="text-muted credit">&copy; 2015 Mphasis</p>
+    </footer>
+    <!-- /container -->
+    <!-- script references -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="styleguide/switch/switch.js"></script>
+    <script src="styleguide/button/button.js"></script>
+    <script src="styleguide/third_party/rAF.js"></script>
+    <script src="styleguide/ripple/ripple.js"></script>
+    <script src="scripts/ui-handler.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

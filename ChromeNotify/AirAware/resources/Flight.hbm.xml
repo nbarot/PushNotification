@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+ <class name="com.mfly.vo.FlightDetails" table="FLIGHT_DETAILS">
+ 	<id name="flightNumber" type="string" column="FLIGHT_NUMBER" />
+ 	<property name="fleetNumber" column="FLEET_NUMBER" />
+ 	<property name="source" column="SOURCE" />
+	<property name="destination" column="DESTINATION" />
+	<property name="status" column="FLIGHT_STATUS" />
+	<property name="carrierCD" column="CARRIER_CD" />
+	<property name="toDate" type="timestamp" column="TODATE" />
+	<property name="scheduledDeapatureTime" type="timestamp" column="SCH_DEP_TIME" />
+	<property name="actualDepartureTime" type="timestamp" column="ACT_DEP_TIME" />
+	<property name="oldGateNumber"  column="OLD_GATE_NUMBER" />
+	<property name="newGateNumber"  column="NEW_GATE_NUMBER" />
+	<property name="oldFare"  column="OLD_FARE" />
+	<property name="newFare"  column="NEW_FARE" />
+	<property name="lastUpdated" type="timestamp" column="LAST_UPDATED_DATE" />	
+ </class>
+</hibernate-mapping>

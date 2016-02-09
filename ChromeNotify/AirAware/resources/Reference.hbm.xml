@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<!-- private FlightDetails flightDetails;
+	private PassengerContactInformation passenger;
+	
+	
+	private String eventType;
+	private String isActive;
+	private Date expiryTime;
+	private String subcriberId; // is it same as device id
+	private String endPoint;
+	private String serviceClass; -->
+
+<hibernate-mapping>
+ <class name="com.mfly.vo.Reference" table="REFERENCE_TABLE">
+ 	<id name="ffpNumber" type="string" column="FFP_NUMBER" />
+ 	<!-- <id name="ffpNumber" type="com.mfly.vo.PassengerContactInformation" column="FFP_NUMBER" /> -->
+ 	<!-- <many-to-one name="flightDetails" class="com.mfly.vo.FlightDetails" column="FLIGHT_NUMBER"/> -->
+
+ 	<!-- <property name="flightDetails" type="com.mfly.vo.FlightDetails" column="FLIGHT_NUMBER" /> --> 	
+ 	<property name="flightNumber" type="string" column="FLIGHT_NUMBER" />  <!-- insert="false" update="false" -->
+  	<property name="eventType" column="EVENT_TYPE" />
+ 	<property name="isActive" column="ACTIVE_FLAG" />
+	<property name="expiryTime" column="EXPIRE_TIME" />
+	<property name="subscriberId" column="SUBSCRIBER_ID" />
+	<property name="endPoint" column="ENDPOINT" />
+	<property name="serviceClass" type="string" column="SERVICE_CLASS" />
+  </class>
+</hibernate-mapping>
